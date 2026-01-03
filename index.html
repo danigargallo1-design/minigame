@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Clockwork Wall</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div class="overlay"></div>
+        <div class="glass-reflection"></div>
+        <div class="vignette"></div>
+        
+        <div id="ui">
+            <div class="top-bar">
+                <div class="steam-gauge">
+                    <div class="gauge-label">BOILER PRESSURE</div>
+                    <div class="gauge-main">
+                        <span id="pressure-val">0</span><small>%</small>
+                    </div>
+                    <div class="gauge-bar-bg">
+                        <div id="pressure-bar"></div>
+                    </div>
+                </div>
+
+                <div class="clock-display">
+                    ⏱️ <span id="time-val">0</span>s
+                </div>
+            </div>
+        </div>
+
+        <canvas id="gameCanvas"></canvas>
+
+        <div id="bottom-ui">
+            <div class="hull-integrity">
+                <div class="integrity-text">HULL INTEGRITY</div>
+                <div class="health-bar-container">
+                    <div id="health-bar"></div>
+                </div>
+                <div class="hp-numeric"><span id="hp-val">150</span> / 150</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script> 
+</body>
+</html>
